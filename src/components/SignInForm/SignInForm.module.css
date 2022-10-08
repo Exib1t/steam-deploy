@@ -1,0 +1,196 @@
+:root {
+  --font-lightblue: #1999ff;
+  --font-lightgray: #afafaf;
+  --input-bg: #32353c;
+  --font-text-hover: #c9c9c9;
+  --button-gradient-blue: linear-gradient(90deg, #06bfff 0%, #2d73ff 100%);
+  --button-gradient-blue-hover: linear-gradient(90deg, #06bfff 30%, #2d73ff 100%);
+  --font-black: #000000;
+}
+
+.signIn {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 20px;
+  background: var(--bg);
+  box-sizing: border-box;
+  padding: 24px 32px;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.signIn__column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: max-content;
+  padding: 0;
+  margin: 0;
+}
+
+.signIn__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 412px;
+  padding: 0;
+  margin: 0;
+  gap: 12px;
+}
+
+.signIn__label {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Motiva Sans', 'sans-serif';
+  font-size: 12px;
+  color: var(--font-lightgray);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  user-select: none;
+  font-weight: 500;
+}
+
+.signIn__labelBlue {
+  font-family: 'Motiva Sans', 'sans-serif';
+  font-size: 12px;
+  color: var(--font-lightblue);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  user-select: none;
+  font-weight: 600;
+}
+
+.signIn__input {
+  border-radius: 2px;
+  color: var(--font-white);
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--input-bg);
+  outline: none;
+  font-size: 15px;
+  border: 1px solid var(--input-bg);
+  margin: 2px 0 0 0;
+}
+
+.signIn__input:focus {
+  background-image: none !important;
+  background-color: rgb(232, 240, 254) !important;
+  color: var(--font-black) !important;
+}
+
+.signIn__text {
+  color: var(--font-lightgray);
+  font-family: 'Motiva Sans', 'sans-serif';
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+.signIn__link {
+  color: var(--font-lightgray);
+  font-family: 'Motiva Sans', 'sans-serif';
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 14px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.signIn__link:hover {
+  color: var(--font-text-hover);
+}
+
+.signIn__submit {
+  background: var(--button-gradient-blue);
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 12px;
+  margin: 0 auto 41px auto;
+  color: var(--font-white);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Motiva Sans', 'sans-serif';
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  width: 100%;
+  max-width: 270px;
+}
+
+.signIn__submit:hover {
+  background: var(--button-gradient-blue-hover);
+}
+
+.signIn__button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  font-family: 'Motiva Sans', 'sans-serif';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  padding: 8px 16px;
+  margin: 0 0 12px 0;
+  text-decoration: none;
+}
+
+.signIn__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 14px 0 14px 5px;
+  gap: 14px;
+}
+
+.signIn__checkbox {
+  display: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.signIn__checkboxLabel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Motiva Sans', 'sans-serif';
+  font-size: 12px;
+  color: var(--font-lightgray);
+  user-select: none;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.signIn__checkboxCustom {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  padding: 3px;
+  border-radius: 2px;
+  background-color: #32353c;
+  cursor: pointer;
+  margin: 0 6px 0 0;
+}
+
+.signIn__checkboxCustomSymbol {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
