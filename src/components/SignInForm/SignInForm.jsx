@@ -17,7 +17,7 @@ const SignInForm = () => {
 
   function postData(e) {
     e.preventDefault();
-    fetch('https://633193633ea4956cfb61d6e0.mockapi.io/api/steam/accounts/', {
+    fetch('https://64613d8b185dd9877e39e724.mockapi.io/accounts/', {
       method: 'POST',
       headers: {
         Accept: 'application/json, text/plain, */*',
